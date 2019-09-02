@@ -19,6 +19,13 @@ public class EventWebClient {
         return WebClient.create("http://localhost:8080/");
     }
 
+    //Use the builder to get more ustomization options including filters, default headers, cookies, client-connectors.
+
+    /*@Bean
+    WebClient webClientBuilder() {
+        return WebClient.builder().baseUrl().defaultHeader().filter().build()
+    }*/
+
     // This can be activated to subsribe to the endpoint. Outcommented cuz its in the same module
     /*@Bean
     ApplicationRunner runner(WebClient webClient) {
