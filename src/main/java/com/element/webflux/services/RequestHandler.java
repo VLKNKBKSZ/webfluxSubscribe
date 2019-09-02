@@ -14,6 +14,9 @@ import reactor.core.publisher.Mono;
 import static org.springframework.http.MediaType.TEXT_EVENT_STREAM;
 
 @Component
+/**
+ * Handles the request of the client.
+ */
 public class RequestHandler {
 
     @Autowired

@@ -11,6 +11,9 @@ import java.util.Random;
 import java.util.stream.Stream;
 
 @Service
+/**
+ * Providing random data about the weather
+ */
 public class WeatherService {
 
     public Flux<WeatherEvent> streamWeather() {
