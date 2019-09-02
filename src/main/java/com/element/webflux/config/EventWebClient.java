@@ -25,8 +25,16 @@ public class EventWebClient {
 
         return args -> webClient.get()
                 .uri("weatherstream")
+                // .header("Authorization", "Basic " + Base64Utils
+                // .encodeToString((username + ":" + token).getBytes(UTF_8)))
+                // .exchange(
+
+                //filter(ExchangeFilterFunctions
+                //.basicAuthentication(username, token))
                 .retrieve()
                 .bodyToFlux(WeatherEvent.class)
                 .subscribe(data -> LOG.info(data.toString()));
     }*/
+
+    // info: https://www.callicoder.com/spring-5-reactive-webclient-webtestclient-examples/
 }
